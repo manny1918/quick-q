@@ -1,0 +1,14 @@
+<% layout('./layouts/boilerplate') %>
+    <h1 class="text-center mt-5 mb">Users</h1>
+    <div class="row col-6 offset-3">
+        <div class="mt-5 d-flex justify-content-end">
+            <a class="btn btn-success d-flex" href="/users/new">New User</a>
+        </div>
+        <ul class="list-group list-group-flush">
+            <%users.forEach((user)=>{%>
+                <li class="list-group-item"><a href="/users/<%=user._id%>">
+                        <%=user.fullname%>
+                    </a></li>
+                <%});%>
+        </ul>
+    </div>

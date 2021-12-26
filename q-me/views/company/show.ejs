@@ -1,0 +1,15 @@
+<% layout('./layouts/boilerplate') %>
+<div class="row col-3 offset-4 mt-5">
+    <div class="card mx-auto" style="width: 38rem;">
+        <img src="https://storage.googleapis.com/stateless-main-bizlatinhub/2020/10/company-incorporation.svg" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title"><%=company.name %> </h5>
+            <p class="card-text"></p>
+                <div class="text-muted">Address: <%=company.address %> </div>
+                <div class="text-muted">Phone number: <%=company.phone %></div>
+            <div class="mt-2">
+                <a href="/company/edit" class="btn btn-primary">Edit company</a>
+            </div>
+        </div>
+    </div>
+</div>
